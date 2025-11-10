@@ -1,4 +1,4 @@
-import {Task} from "../Types/todo-types";
+import {Task} from "../src/Types/todo";
 import { LocalStorage } from "node-localstorage";
 const localStorage = new LocalStorage("./scratch");
 

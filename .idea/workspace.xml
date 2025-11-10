@@ -5,7 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87a8f178-50ea-41c1-b90b-49c95d4ea2ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/updateTask.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Store-Todo/store-todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Store-Todo/store-todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Todo-Task-Functions/create-task.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Todo-Functions/create-task.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/listTodos.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Todo-Functions/read-todos.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/node_modules/.yarn-integrity" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/.yarn-integrity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/todo.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/Types/todo.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,13 +46,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "ASKED_MARK_IGNORED_FILES_AS_EXCLUDED": "true",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "dev.nx.console.ai_check_dont_ask_again": "true",
     "dev.nx.console.last_ai_configure_notification_timestamp": "1762341588240",
-    "git-widget-placeholder": "5-implement-a-function-to-update-a-task",
+    "git-widget-placeholder": "main",
     "last_opened_file_path": "/Volumes/Development/code/console-todo-list/console-todo-list",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -52,12 +62,15 @@
     "nodejs_package_manager_path": "yarn",
     "nx.console.mcp.server.install.notification.hide": "true",
     "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors",
-    "ts.external.directory.path": "/Applications/WebStorm.app/Contents/plugins/javascript-plugin/jsLanguageServicesImpl/external",
+    "ts.external.directory.path": "/Volumes/Development/code/console-todo-list/console-todo-list/node_modules/typescript/lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/Types" />
+      <recent name="$PROJECT_DIR$/Todo-Task-Functions" />
+      <recent name="$PROJECT_DIR$/Store-Todo" />
       <recent name="$PROJECT_DIR$/.." />
       <recent name="$PROJECT_DIR$/src" />
     </key>
@@ -77,7 +90,7 @@
       <option name="presentableId" value="Default" />
       <updated>1762341528175</updated>
       <workItem from="1762341529238" duration="6406000" />
-      <workItem from="1762351979456" duration="14110000" />
+      <workItem from="1762351979456" duration="19539000" />
     </task>
     <servers />
   </component>
