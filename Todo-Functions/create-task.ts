@@ -1,4 +1,5 @@
-import {Task, TaskPriority, TaskStatus} from "../Types/todo-types";
+import {Task, TaskPriority, TaskStatus} from "../src/Types/todo";
+
 export function todoFunctions(
     todos: Task[],
     title: string,
