@@ -103,7 +103,7 @@ async function mainMenu():Promise<void> {
         }
         case ('Delete Todo'): {
             const {id} = await inquirer.prompt(
-                {name: 'id', message: 'Delete Todo ID', type: 'number'}
+                {name: 'id', message: 'Delete Todo ID', type: 'input'}
             );
             todos = deleteTodo(todos, id);
             console.log('Todo Deleted Successfully.');
