@@ -5,7 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="87a8f178-50ea-41c1-b90b-49c95d4ea2ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/delete-todos.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getTodoById.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +43,7 @@
     "RunOnceActivity.git.unshallow": "true",
     "dev.nx.console.ai_check_dont_ask_again": "true",
     "dev.nx.console.last_ai_configure_notification_timestamp": "1762341588240",
-    "git-widget-placeholder": "12-implement-a-function-to-delete-a-task",
+    "git-widget-placeholder": "14-implement-a-function-to-get-todo-by-id",
     "last_opened_file_path": "/Volumes/Development/code/console-todo-list/console-todo-list",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
@@ -78,7 +78,7 @@
       <option name="presentableId" value="Default" />
       <updated>1762341528175</updated>
       <workItem from="1762341529238" duration="6406000" />
-      <workItem from="1762351979456" duration="16134000" />
+      <workItem from="1762351979456" duration="16320000" />
     </task>
     <servers />
   </component>
