@@ -1,8 +1,8 @@
 import inquirer from 'inquirer';
-import {todoFunctions, deleteTodo, getTodoById, listTodos, updateTodo} from "./Todo-Functions/todo-functions";
-import { Task, TaskPriority, TaskStatus } from "./Types/todo-types";
+import {createTodo, deleteTodo, getTodoById, readTodos, updateTodo} from "./Todo-Functions/create-todo";
 import {storeTodo} from "./Store-Todo/store-todo";
 import { LocalStorage } from "node-localstorage";
+import {Task, TaskPriority, TaskStatus} from "./Types/todo-types";
 
 let todos: Task[] = [];
 
@@ -31,7 +31,7 @@ async function mainMenu() {
                 { type: 'list', name: 'status', message: 'Status (Pending, InProgress, Completed, Archived):', choices: Object.values(TaskStatus) },
                 { type: 'input', name: 'dueDate', message: 'Due Date (YYYY-MM-DD):', default: '' },
             ]);
-            todos = todoFunctions(
+            todos = createTodo(
                 todos,
                 answers.title,
                 answers.description,
@@ -45,7 +45,7 @@ async function mainMenu() {
             break;
         }
         case ('Read Todos'): {
-            todos = listTodos(todos);
+            todos = readTodos(todos);
             console.log(todos);
             storeTodo(todos);
             await mainMenu();

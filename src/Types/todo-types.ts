@@ -11,7 +11,6 @@ export enum TaskPriority {
 }
 
 export class Task {
-    static nextId = 1;
     id: number;
     title: string;
     description: string;
@@ -21,11 +20,12 @@ export class Task {
     dueDate?: Date;
 
     constructor(
+        id: number,
         title: string,
         description: string,
         dueDate?: Date,
     ) {
-        this.id = Task.nextId++;
+        this.id = id;
         this.title = title;
         this.description = description;
         this.status = TaskStatus.Pending || TaskStatus.Completed || TaskStatus.Archived;
