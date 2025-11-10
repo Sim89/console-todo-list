@@ -8,12 +8,12 @@ let todos: Task[] = [];
 
 const localStorage = new LocalStorage("./scratch");
 
-const savedTodos = localStorage.getItem('todos');
+const savedTodos: string | null = localStorage.getItem('todos');
 if (savedTodos) {
     todos = JSON.parse(savedTodos);
 }
 
-async function mainMenu() {
+async function mainMenu():Promise<void> {
     const { command } = await inquirer.prompt([
         {
             type: 'list',
@@ -53,9 +53,9 @@ async function mainMenu() {
         }
         case ('Get Todo by Id'): {
             const { id } = await inquirer.prompt([
-                {type: 'input', name: 'id', message: 'Enter Todo Id to find:'}
+                {type: 'number', name: 'id', message: 'Enter Todo Id to view:',}
             ]);
-            const todo = getTodoById(todos, Number(id));
+            const todo: Task | undefined = getTodoById(todos, Number(id));
             if (todo) {
                 console.log('Todo found:', todo);
             } else {
@@ -67,7 +67,7 @@ async function mainMenu() {
         }
         case ('Update Todo'): {
             const {id} = await inquirer.prompt([
-                {type: 'input', name: 'id', message: 'Update Todo ID:'}
+                {type: 'input', name: 'id', message: 'Update Todo ID:',}
             ]);
             const answers = await inquirer.prompt([
                 {type: 'input', name: 'title', message: 'New Title:'},
@@ -102,17 +102,18 @@ async function mainMenu() {
             break;
         }
         case ('Delete Todo'): {
-            const {id} = await inquirer.prompt([
-                {name: 'id', message: 'Delete Todo ID', type: 'number'},
-            ]);
-            todos = deleteTodo(todos, Number(id));
+            const {id} = await inquirer.prompt(
+                {name: 'id', message: 'Delete Todo ID', type: 'number'}
+            );
+            todos = deleteTodo(todos, id);
             console.log('Todo Deleted Successfully.');
             storeTodo(todos);
             await mainMenu();
             break;
         }
-        case ('Exit'): {
-            return await mainMenu();
+        case 'Exit': {
+            console.log('Exiting Todo Application. Goodbye!');
+          return await mainMenu();
         }
     }
 }

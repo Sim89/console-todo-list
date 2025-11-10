@@ -1,5 +1,6 @@
 export enum TaskStatus {
     Pending =  "Pending",
+    InProgress = "InProgress",
     Completed = "Completed",
     Archived = "Archived",
 }
@@ -28,7 +29,7 @@ export class Task {
         this.id = id;
         this.title = title;
         this.description = description;
-        this.status = TaskStatus.Pending || TaskStatus.Completed || TaskStatus.Archived;
+        this.status = TaskStatus.Pending || TaskStatus.InProgress || TaskStatus.Completed || TaskStatus.Archived;
         this.priority = TaskPriority.Low || TaskPriority.Medium || TaskPriority.High;
         this.createdAt = new Date();
         this.dueDate = dueDate;
